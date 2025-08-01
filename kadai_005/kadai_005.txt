@@ -1,0 +1,38 @@
+PS C:\Users\小島　慧音> cd C:\Programing\TEST
+PS C:\Programing\TEST> mkdir git_challenge
+
+
+    ディレクトリ: C:\Programing\TEST
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/07/31     11:17                git_challenge
+
+
+PS C:\Programing\TEST> cd C:\Programing\TEST\git_challenge
+PS C:\Programing\TEST\git_challenge> git init
+Initialized empty Git repository in C:/Programing/TEST/git_challenge/.git/
+PS C:\Programing\TEST\git_challenge> git add .
+PS C:\Programing\TEST\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 24a020a] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Programing\TEST\git_challenge> git diff
+diff --git a/hello_world.txt b/hello_world.txt
+index 5dd01c1..42ae6b0 100644
+--- a/hello_world.txt
++++ b/hello_world.txt
+@@ -1 +1,2 @@
+-Hello, world!
+\ No newline at end of file
++Hello, world!
++こんにちは、世界！
+\ No newline at end of file
+PS C:\Programing\TEST\git_challenge> git add .
+PS C:\Programing\TEST\git_challenge> git commit -m "日本語訳を追記"
+[main f4f3ba0] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Programing\TEST\git_challenge> git log --oneline
+f4f3ba0 (HEAD -> main) 日本語訳を追記
+24a020a hello_world.txtを追加
